@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-BG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: var(--Font-size);
+  color: var(--soft-blue);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.nft-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--card-BG);
+  border-radius: 1rem;
+  max-width: 330px;
+}
+
+.nft-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.nft-info {
+  margin-bottom: 1rem;
+}
+
+.nft-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.nft-info ul li {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nft-info ul li:first-child {
+  color: var(--cyan);
+}
+
+.nft-text {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.nft-text h2 {
+  font-weight: 600;
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+
+.nft-text h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.nft-text p {
+  font-weight: 300;
+}
+
+.nft-creator {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.nft-creator a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.nft-creator a:hover {
+  color: var(--cyan);
+}
+
+.hero-image {
+  position: relative;
+  margin: 1rem auto;
+}
+
+.hero-image img {
+  border-radius: 1rem;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cyan);
+  border-radius: 1rem;
+  opacity: 0;
+}
+
+.hero-image:hover .overlay {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.creator-img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border: 2px solid var(--White);
+  border-radius: 50%;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--line);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
